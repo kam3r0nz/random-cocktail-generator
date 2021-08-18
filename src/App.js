@@ -15,8 +15,15 @@ class App extends React.Component {
         <header className="App-header">
           Random Cocktail Recipe Generator
         </header>
-        {this.props.recipe.strDrink}<br/>
-        <img className="drink-thumb" src={this.props.recipe.strDrinkThumb} alt={this.props.recipe.strDrink}/>
+        <div id="recipe-card">
+        <img className="drink-thumb" src={this.props.recipe.strDrinkThumb} alt={this.props.recipe.strDrink}/><br/>
+        <h1>{this.props.recipe.strDrink}</h1>
+        {this.props.recipe.strAlcoholic}<br/>
+        Category: {this.props.recipe.strCategory}<br/>
+        <h2>Instructions:</h2>
+        <div id="instructions">{this.props.recipe.strInstructions}</div>
+        </div>
+
       </div>
     )
   }
