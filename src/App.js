@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react'
 import { connect } from 'react-redux'
 import { fetchRecipe } from './actions/recipeActions'
+import RecipeCard from './recipeCard'
 
 class App extends React.Component {
 
