@@ -2,7 +2,6 @@ import './App.css';
 import React from 'react'
 import { connect } from 'react-redux'
 import { fetchRecipe } from './actions/recipeActions'
-import RecipeCard from './recipeCard'
 
 class App extends React.Component {
 
@@ -16,10 +15,17 @@ class App extends React.Component {
         <header className="App-header">
           Random Cocktail Recipe Generator
         </header>
+        {this.props.recipe.strDrink}
       </div>
     )
   }
 }
 
+const mapStateToProps = state => {
+  return {
+    recipe: state
+  }
+}
 
-export default connect(null, { fetchRecipe })(App);
+
+export default connect(mapStateToProps, { fetchRecipe })(App);

@@ -3,7 +3,7 @@ export default function rootReducer(state = [], action) {
         case 'FETCH_RECIPE':
             return state
         case 'ADD_RECIPE':
-            return action.recipe
+            return action.recipe.drinks[0]
         default:
             return state
     }
