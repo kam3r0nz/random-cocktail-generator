@@ -20,10 +20,5 @@ class App extends React.Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    recipe: state.drinks[0]
-  }
-}
 
-export default connect(mapStateToProps, { fetchRecipe })(App);
+export default connect(null, { fetchRecipe })(App);
