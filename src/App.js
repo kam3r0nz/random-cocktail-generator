@@ -20,6 +20,21 @@ class App extends React.Component {
         <h1>{this.props.recipe.strDrink}</h1>
         {this.props.recipe.strAlcoholic}<br/>
         Category: {this.props.recipe.strCategory}<br/>
+        <h2>Ingredients:</h2>
+        <ul>        
+        <li>{this.props.recipe.strMeasure1} {this.props.recipe.strIngredient1}</li>
+        <li>{this.props.recipe.strMeasure2} {this.props.recipe.strIngredient2}</li>
+        <li>{this.props.recipe.strMeasure3} {this.props.recipe.strIngredient3}</li>
+        <li>{this.props.recipe.strMeasure4} {this.props.recipe.strIngredient4}</li>
+        <li>{this.props.recipe.strMeasure5} {this.props.recipe.strIngredient5}</li>
+        <li>{this.props.recipe.strMeasure6} {this.props.recipe.strIngredient6}</li>
+        <li>{this.props.recipe.strIngredient7}</li>
+        <li>{this.props.recipe.strIngredient8}</li>
+        <li>{this.props.recipe.strIngredient9}</li>
+        <li>{this.props.recipe.strIngredient10}</li>
+        <li>{this.props.recipe.strIngredient11}</li>
+        <li>{this.props.recipe.strIngredient12}</li>
+        </ul>
         <h2>Instructions:</h2>
         <div id="instructions">{this.props.recipe.strInstructions}</div>
         </div>
